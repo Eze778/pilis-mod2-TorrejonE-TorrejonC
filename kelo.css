@@ -1,26 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap');
 
+{ 
+  box-sizing: border-box;
+}
 
+html, body{
+font-family: 'Montserrat', sans-serif;
+background: #87a70a;
+color: #ffff;
+}
 
- /*#home{
-    background: ;
+ /*  */ 
+#home{
+    background: #87a70a;
+    margin: auto;
+    max-width: auto;
+    overflow: hidden;
+    padding: 40px 40px;
 }
 #event{
     background: #9eb708;
+    margin: auto;
+    max-width: auto;
+    overflow: hidden;
+    padding: 40px 40px;
 }
 #we{
     background: #b5c806;
+    margin: auto;
+    max-width: auto;
+    overflow: hidden;
+    padding: 15px 15px;
 }
 #contact{
     background: #ccd904;
-}  */ 
-
-.container {
-    
+    margin: auto;
     max-width: auto;
     overflow: hidden;
     padding: 10px 10px;
-    background: #87a70a;
+}
+
+.tituloF {
+text-align: center;
+font-weight: bold;
+font-size: large;
 }
 
 .titulos {
@@ -57,20 +80,18 @@
 }
 
   /* Contact */
-  #contact {
-    padding: 120px 0;
-  }
+
   
   .contact-form {
     float: left;
     width: 45%;
-    
+    padding: 20px;
   }
   
   .contact-title {
     float: right;
     width: 55%;
-   
+    padding-top: 160px;
     text-align: center;
   }
   form .form-group {
@@ -102,15 +123,15 @@
  
       
   .btn-light {
-    background: #841934;
-    border: 1px solid #841934;
+    background: #1aa70a;
+    border: 1px solid #9eb708;
     color: #fff;
     width: 100%;
   }
   
   .btn-light:hover {
-    background: #fff;
-    border: 1px solid #841934;
-    color: #841934;
+    background: #87a70a;
+    border: 1px solid green;
+    color: blue;
   }
      

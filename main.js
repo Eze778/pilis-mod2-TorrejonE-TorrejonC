@@ -1,14 +1,14 @@
 function onClick (event) {
     event.preventDefault();
-    this.style.backgroundColor = "negro";
-    consola.log("haga clic en...");
-    consola.log(event);
+    this.style.backgroundColor = "black";
+    console.log("click...");
+    console.log(event);
   
   
     const mensaje = {
-      name: documento.getElementById("name").valor,
-      titular: documento.getElementById("titular").valor,
-      celualr: documento.getElementById("celular").valor
+      comercio: document.getElementById('comercio').value,
+      titular: document.getElementById('titular').value,
+      celular: document.getElementById('celular').value
     }
     console.log(mensaje);
   
@@ -16,20 +16,20 @@ function onClick (event) {
     fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
       body: JSON.stringify(mensaje),
-      headers: { "Content-type": "apliction/json; charset=UTF-8"},
+      headers: { "Content-type": "application/json; charset=UTF-8" },
     })
       .then((response) => response.json())
-      .then((json) => {
-          consola.log(json);
+      .then((json) => { 
+          console.log(json);
           Swal.fire(
-              'Enviado',
-              'Gracias por tu comentario',
-              'éxito'
+              'Solicitud Recibida',
+              'Gracias por Registrarte',
+              'success'
           );
           cleanForm();
-          /* Redireccionar URL(); */
+          /* redirectUrl(); */
       })
-      .catch((error) => consola.log(error));
+      .catch((err) => console.log(err));
   
   }
 
@@ -37,9 +37,9 @@ function onClick (event) {
     let formulario = document.getElementById('formulario');    
     formulario.reset();    
 }
-function redirectURL () {
-    ventana.ubicación.href = "https://google.com";    
+function redirectUrl(){
+    window.location.href = "https://google.com";    
 }
 
 let boton = document.getElementById("enviar");
-boton.addEventListener("clic", onClick);
+	boton.addEventListener("click", onClick);
