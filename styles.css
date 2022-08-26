@@ -1,136 +1,281 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
-{ 
-  box-sizing: border-box;
+:root{
+  font-size: 18px;
 }
-
 html, body{
-font-family: 'Montserrat', sans-serif;
-background: #87a70a;
-color: #ffff;
+  background-image: linear-gradient(#7DCE13, #5BB318,  #2B7A0B,#164305) ;
+  font-family: 'Rubik', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+/* header */
+.header {
+  width: 100%;
+  height: 140px;
+  margin: 0px;
+  background: #EAE509;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu img {
+  width: 95px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.barra {
+  margin-top: 90px;
+  margin-right: 40px;
+}
+.barra a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s all;
+}
+.barra a:hover {
+  background: #A91079;
+  color: white;
 }
 
- /*  */ 
-#home{
-    background: #87a70a;
-    margin: auto;
-    max-width: auto;
-    overflow: hidden;
-    padding: 40px 40px;
+/* secciones */
+#home {
+  margin: auto;
+  max-width: auto;
+  overflow: hidden;
+  padding: 50px 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
-#event{
-    background: #9eb708;
-    margin: auto;
-    max-width: auto;
-    overflow: hidden;
-    padding: 40px 40px;
+#event {
+  margin: auto;
+  max-width: auto;
+  overflow: hidden;
+  padding: 50px 40px;
+  margin-bottom: 30px;
 }
-#we{
-    background: #b5c806;
-    margin: auto;
-    max-width: auto;
-    overflow: hidden;
-    padding: 15px 15px;
+#we {
+  margin: auto;
+  max-width: auto;
+  overflow: hidden;
+  padding: 50px 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-#contact{
-    background: #ccd904;
-    margin: auto;
-    max-width: auto;
-    overflow: hidden;
-    padding: 10px 10px;
+#we img{
+  width: 600px;
+  height: auto;
+  margin-top: 80px;
 }
-
+#contact {
+  margin: auto;
+  max-width: auto;
+  overflow: hidden;
+  padding: 10px 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .tituloF {
-text-align: center;
-font-weight: bold;
-font-size: large;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
 }
 
 .titulos {
-    float: left;
-    margin: auto;
-    padding-top: 100px;
-    text-align: center;
-    max-width: 650px;
+  float: left;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+  max-width: 650px;
 }
-
 .multi {
-    margin: auto;
-    text-align: center;
-    float: right;
-    max-width: 650px;
-
+  margin: auto;
+  text-align: center;
+  float: right;
+  max-width: 650px;
 }
-
 .titulos2 {
-    float: right;
-    margin: auto;
-    padding-top:85px;
-    text-align: center;
-    max-width: 650px;
-
+  float: right;
+  margin: auto;
+  padding-top: 85px;
+  text-align: center;
+  max-width: 650px;
 }
-
 .multi2 {
-    margin: auto;
-    text-align: center;
-    float: left;
-    max-width: 650px;
+  margin: auto;
+  text-align: center;
+  float: left;
+  max-width: 650px;
 
 }
 
-  /* Contact */
-
-  
-  .contact-form {
-    float: left;
-    width: 45%;
-    padding: 20px;
-  }
-  
-  .contact-title {
-    float: right;
-    width: 55%;
-    padding-top: 160px;
-    text-align: center;
-  }
-  form .form-group {
-    margin-bottom: 1rem;
-  }
-  
-  form .form-control {
-    /* display: block; */
-    width: 100%;
-    padding: 0.375rem 0.7rem;
-    font-size: 1rem;
-    line-height: 1.7;
-    border: none; 
-    
-  }
-  
+/* Contact */
+.contact-form {
+  float: left;
+  width: 45%;
+}
+.contact-title {
+  float: right;
+  width: 55%;
+  padding-top: 160px;
+  text-align: center;
+}
+.form-group{
+  font-size: 1.4rem;
+  padding-bottom: 18px; 
+}
+.form-group input{
+  margin-top: 12px;
+}
+.form-group input:focus{
+  outline: none;
+}
+.tituloF{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.7rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  border: none;
+}
 /* Boton Form */
 .btn {
-    display: inline-block;
-    font-size: 15px;
-    padding: 14px 23px;
-    cursor: pointer;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    margin-top: 10px;
-  }
-  
- 
-      
-  .btn-light {
-    background: #1aa70a;
-    border: 1px solid #9eb708;
-    color: #fff;
-    width: 100%;
-  }
-  
-  .btn-light:hover {
-    background: #87a70a;
-    border: 1px solid green;
-    color: blue;
-  }
+  font-size: 1.4rem;
+  padding: 14px 23px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  border: none;
+  background: #EAE509;
+  border: none;
+  color: #000000;
+  width: 100%;
+  margin-top: 12px;
+}
+.btn:hover {
+  background: #A91079;
+  border: 1px solid green;
+  color: white;
+}
+/* clima */
+.card {
+  width: 600px;
+  height: 330px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  padding: 20px;
+  color: whitesmoke;
+  text-shadow: 1.5px 1.5px black;
+  background-image: linear-gradient(to right, rgba(76, 133, 184, 0.85), rgba(8, 32, 87, 1));
+}
+#ciudad {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.texTempAct {
+  font-size: 1.18rem;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.weather {
+  display: flex;
+  font-weight: bold;
+}
+.tempActual {
+  display: flex;
+  font-size: 4.5rem;
+  align-items: center;
+}
+#icono img {
+  width: 10rem;
+  height: auto;
+}
+#descTiempo {
+  font-size: 1.38rem;
+}
+.tiempoDesc {
+  margin-top: 35px;
+  margin-left: 8px;
+}
+.sensacionTermica {
+  display: flex;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+#sensTerm {
+  margin-left: 5px;
+}
+.tempMinMax {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#minTemp {
+  margin-left: 8px;
+}
+.tempMin {
+  display: flex;
+  margin: 5px;
+  margin-right: 13px;
+}
+#maxTemp {
+  margin-left: 8px;
+}
+.tempMax {
+  display: flex;
+  margin: 5px;
+  margin-right: 13px;
+}
+.humed {
+  margin: 5px;
+  margin-right: 13px;
+}
+/* footer */
+.footer {
+  width: 100%;
+  height: 100px;
+  background: #EAE509;
+  margin-top: 60px;
+}
+.pie {
+  display: flex;
+  margin: 40px;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.pieText {
+  display: flex;
+  font-size: 0.9rem;
+  color: black;
+}
+.pieText img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  padding-top: 10px;
+}
+.logos {
+  width: 180px;
+  height: auto;
+  padding-top: 10px;
+}
+.logos a {
+  padding: 7px;
+}
+.logos img {
+  width: 36px;
+  height: 36px;
+}
