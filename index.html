@@ -12,8 +12,15 @@
 </head>
 
 <body>
-    <header>
-
+    <header class="header">
+        <div class ="menu">
+            <a href="#home"><img src="/assetsKelo/logo.jpg" alt="logo"></a>
+            <nav class="barra">
+                <a href="#event">El Evento</a>
+                <a href="#we">Nosotros</a>
+                <a href="#contact">Registro</a>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="home">
@@ -77,7 +84,6 @@
                     <form id="formulario">
                         <div class="tituloF">
                             <label for="titulof">Formulario de contacto</label>
-
                         </div>
                         <div class="form-group">
                             <label for="comercio">Comercio</label>
@@ -92,7 +98,7 @@
                             <input id="celular" class="form-control" type="number">
                         </div>
                         <!-- CONTROLAR -->
-                        <button id="enviar" class="btn btn-light">Enviar</button>
+                        <button id="enviar" class="btn">Enviar</button>
                     </form>
 
                 </div>
@@ -100,11 +106,55 @@
         </section>
 
         <section>
+            <div class= "card">
+                <span id="ciudad"></span>
+                <h3 class="texTempAct">Temperatura Actual</h3>
+                <div class="weather">
+                    <div class="tempActual">
+                        <span id="temp"></span>
+                    </div>
+                    <span id="icono"></span>
+                    <div class="tiempoDesc">
+                        <span id="descTiempo"></span>
+                        <div>
+                            <span id="descTiempo"></span>
+                            <div class="sensacionTermica">
+                                <span>Sensacion termica:</span>
+                                <span id="sensTerm"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tempMinMax">
+                    <div class="tempMin">
+                        <span>MIN</span>
+                        <span id="minTemp"></span>
+                    </div>
+                    <div class="tempMax">
+                        <span>MAX</span>
+                        <span id="maxTemp"></span>
+                    </div>
+                    <div class="humed">
+                        <span>Humedad:</span>
+                        <span id="humedad"></span>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="pie">
+            <div class="pieText">
+                <img src="/assetsKelo/logo.jpg" alt="">
+                <p>Ministerio de Desarrollo Económico y Producción</p>
+            </div>
+            <div class="logos">
+                <a href=""><img src="/assetsKelo/whatsapp.png" alt=""></a>
+                <a href=""><img src="/assetsKelo/facebook.png" alt=""></a>
+                <a href=""><img src="/assetsKelo/instagram.png" alt=""></a>
+            </div>
+        </div>
     </footer>
     <script src="main.js"></script>
 </body>
