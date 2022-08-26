@@ -2,6 +2,7 @@
 
 :root{
   font-size: 18px;
+  
 }
 html, body{
   background-image: linear-gradient(#7DCE13, #5BB318,  #2B7A0B,#164305) ;
@@ -9,6 +10,7 @@ html, body{
   margin: 0px;
   padding: 0px;
   color: white;
+  scroll-behavior: smooth;
 }
 /* header */
 .header {
@@ -39,6 +41,7 @@ html, body{
   font-weight: bold;
   text-transform: uppercase;
   transition: 0.5s all;
+
 }
 .barra a:hover {
   background: #A91079;
